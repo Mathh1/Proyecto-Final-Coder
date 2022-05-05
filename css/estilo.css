@@ -1,36 +1,40 @@
+body{
+  background-color: #292929;
+}
 header div nav {
   background-color: #292929;
   height: 80px;
   width: 100%;
 }
 
-header div nav .menu-icon {
+header div nav .checkbtn {
   width: 30px;
   height: 30px;
   border-radius: 2px;
-}
 
-header div nav .checkbtn {
-  font-size: 30px;
-  color: white;
-  float: right;
-  line-height: 100px;
-  margin-right: 40px;
-  cursor: pointer;
-  display: n;
 }
-
-header div nav #check {
+.menu-icon img{
+  width: 35px;
+  height: 30px;
+  border-radius: 2px;
+}
+.menu-icon, #check{
   display: none;
+}
+
+header div nav .checkbtn, #check {
+  display: no;
 }
 
 header div nav .logo {
   color: white;
   font-size: 35px;
-  line-height: 80px;
-  padding: 0 100px;
+  line-height: 90px;
+  padding: 0 70px;
   font-weight: bold;
 }
+
+
 
 header div nav ul {
   float: right;
@@ -56,21 +60,6 @@ header div nav ul li a.active, header div nav ul li a:hover {
   transition: .5s;
 }
 
-@media (max-width: 952px) {
-  header label.logo {
-    font-size: 30px;
-    padding-left: 50px;
-  }
-  header nav ul li a {
-    font-size: 16px;
-  }
-}
-
-@media (max-width: 858px) {
-  header .checkbtn {
-    display: block;
-  }
-}
 
 * {
   padding: 0;
@@ -78,5 +67,49 @@ header div nav ul li a.active, header div nav ul li a:hover {
   text-decoration: none;
   list-style: none;
   box-sizing: border-box;
+}
+
+@media (max-width:1000px){
+  .checkbtn{
+    display: block;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #292929;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li{
+    display: block;
+    width: 100%;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background-color: none;
+    color: rgb(255, 51, 0);
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+  .menu-icon{
+    display: block;
+    position: fixed;
+    top: 30px;
+    right: 20px;
+  }
+}
+section{
+  background: url(../imagenes/27766.jpg) no-repeat;
+  background-size: cover;
+  height: calc(100vh - 80px);
 }
 /*# sourceMappingURL=estilo.css.map */
