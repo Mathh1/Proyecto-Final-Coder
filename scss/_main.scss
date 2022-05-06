@@ -2,7 +2,22 @@ section{
     background-image: url(../imagenes/fondo.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
-    p.texto{
+    .texto{
+        font-family: 'Courier New', Courier, monospace;
         text-align: center;
-    }
+        font-size: 50px;
+        color: white;
+        padding: 20%;
+        }
+        .somoscaja{
+        font-family: 'Courier New', Courier, monospace;
+        text-align: center;
+        font-size: 25px;
+        color: white;
+        padding: 5%;
+        }
+        .sesion{
+        margin-left: auto;
+        margin-right: auto;
+        }
 }

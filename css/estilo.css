@@ -131,4 +131,24 @@ section{
   margin-left: auto;
   margin-right: auto;
 }
+.mensaje{
+  background-color: #292929;
+  padding: 40px;
+  font-size: 20px;
+}
+.sesion{
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+.login{
+  background-color: #292929;
+  padding: 40px;
+  font-size: 20px;
+}
+.register{
+  background-color: #292929;
+  padding: 40px;
+  font-size: 20px;
+}
 /*# sourceMappingURL=estilo.css.map */
