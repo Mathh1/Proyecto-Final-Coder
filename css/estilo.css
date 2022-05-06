@@ -107,9 +107,28 @@ header div nav ul li a.active, header div nav ul li a:hover {
     right: 20px;
   }
 }
+
 section{
   background: url(../imagenes/27766.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
+}
+.texto{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  color: white;
+  padding: 20%;
+}
+.somoscaja{
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: 25px;
+  color: white;
+  padding: 5%;
+}
+.sesion{
+  margin-left: auto;
+  margin-right: auto;
 }
 /*# sourceMappingURL=estilo.css.map */

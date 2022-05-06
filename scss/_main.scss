@@ -2,4 +2,7 @@ section{
     background-image: url(../imagenes/fondo.jpg) no-repeat;
     background-size: cover;
     height: calc(100vh - 80px);
+    p.texto{
+        text-align: center;
+    }
 }
