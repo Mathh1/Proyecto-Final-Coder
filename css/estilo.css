@@ -172,5 +172,8 @@ section{
 }
 .footergrid{
   grid-area: footergrid;
+  text-align: center;
+  color: white;
+
 }
 /*# sourceMappingURL=estilo.css.map */

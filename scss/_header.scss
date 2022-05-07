@@ -1,12 +1,12 @@
 header{
     div{
         nav{
-            background-color: rgb(41, 41, 41);
+            background-color: $g;
             height: 80px;
             width: 100%;
             .checkbtn{
                 font-size: 30px;
-                color: white;
+                color: $b;
                 float: right;
                 line-height: 80px;
                 margin-right: 40px;
@@ -14,7 +14,7 @@ header{
                 display:none;
             }
             .logo{
-                color: white;
+                color: $b;
                 font-size: 35px;
                 line-height: 80px;
                 padding: 0 100px;
@@ -29,7 +29,7 @@ header{
                     line-height: 80px;
                     margin: 0 5px;
                     a{
-                        color: white;
+                        color: $b;
                         font-size: 17px;
                         padding: 7px 13px;
                         border-radius: 3px;
