@@ -1,6 +1,7 @@
 body{
   background-color: #292929;
 }
+
 header div nav {
   background-color: #292929;
   height: 80px;
@@ -150,5 +151,26 @@ section{
   background-color: #292929;
   padding: 40px;
   font-size: 20px;
+}
+
+.container{
+  width: 100%;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-areas:
+  "headergrid"
+  "iniciogrid"
+  "footergrid";
+}
+.header{
+  grid-area: headergrid;
+}
+.iniciogrid{
+  grid-area: iniciogrid;
+}
+.footergrid{
+  grid-area: footergrid;
 }
 /*# sourceMappingURL=estilo.css.map */
