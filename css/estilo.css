@@ -1,11 +1,13 @@
 body{
   background-color: #292929;
+  min-width: 100vh;
 }
 
 header div nav {
   background-color: #292929;
   height: 80px;
   width: 100%;
+  position: fixed;
 }
 
 header div nav .checkbtn {
@@ -174,6 +176,60 @@ section{
   grid-area: footergrid;
   text-align: center;
   color: white;
+  bottom: 0;
+  margin-top: auto;
+}
 
+footer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;    
+}
+
+.icon {
+  position: relative;
+  margin: 40px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  transition: all .8s;
+  cursor: pointer;
+}
+
+.icon:hover {
+  background-color: #e60073;
+  box-shadow:  0 0 20px #e60073 ;
+}
+
+
+.icon:hover:nth-child(
+
+) {
+  background-color: #25d366;
+  box-shadow: 0 0 20px #25d366 ;
+}
+
+
+.icon i {
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-size: 1.7rem;
+}
+
+svg circle {
+  stroke-dasharray: 150;
+  transition: all .8s ease-in-out;
+}
+
+.icon:hover circle {
+  stroke-dasharray: 220;
+}
+main{
+  padding-top: 80px;
 }
 /*# sourceMappingURL=estilo.css.map */
