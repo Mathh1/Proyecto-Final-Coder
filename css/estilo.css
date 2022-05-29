@@ -1,6 +1,5 @@
 body{
   background-color: #292929;
-  min-width: 100vh;
 }
 
 header div nav {
@@ -72,7 +71,7 @@ header div nav ul li a.active, header div nav ul li a:hover {
   box-sizing: border-box;
 }
 
-@media (max-width:1000px){
+@media screen and (max-width:1000px){
   .checkbtn{
     display: block;
   }
@@ -109,51 +108,75 @@ header div nav ul li a.active, header div nav ul li a:hover {
     top: 30px;
     right: 20px;
   }
+  .slider-frame{
+    display: none;
+  }
 }
-
 section{
   background: url(../imagenes/27766.jpg) no-repeat;
   background-size: cover;
   height: calc(100vh - 80px);
 }
+.inicio{
+  width: 100%;
+  box-sizing: border-box;
+}
 .texto{
+  width: 100%;
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   font-size: 50px;
   color: white;
-  padding: 20%;
+  padding-top: 10rem;
 }
 .somoscaja{
   font-family: 'Courier New', Courier, monospace;
   text-align: center;
   font-size: 25px;
   color: white;
-  padding: 5%;
+  padding-top: 10rem;
 }
 .sesion{
   margin-left: auto;
   margin-right: auto;
 }
 .mensaje{
+  width: 60%;
   background-color: #292929;
   padding: 40px;
   font-size: 20px;
+}
+.dejanos{
+  display: flex;
+  justify-content: center;
 }
 .sesion{
   color: white;
   text-align: center;
   padding: 30px;
+  padding-top: 10rem;
 }
 .login{
   background-color: #292929;
-  padding: 40px;
+  padding: 3rem;
   font-size: 20px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.logina{
+  padding-top: 10rem;
+
 }
 .register{
+  width: 60%;
   background-color: #292929;
   padding: 40px;
   font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .container{
   width: 100%;
@@ -184,8 +207,7 @@ footer{
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;    
+  justify-content: center;  
 }
 
 .icon {
@@ -229,5 +251,46 @@ svg circle {
 }
 main{
   padding-top: 80px;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.slider-frame {
+	width: 30%;
+  height: auto;
+	margin: 50px auto 0;
+	overflow: hidden;
+}
+
+.slider-frame ul {
+	display: flex;
+	padding: 0;
+	width: 400%;
+	
+	animation: slide 20s infinite alternate ease-in-out;
+}
+
+.slider-frame li {
+	width: 100%;
+	list-style: none;
+}
+
+.slider-frame img {
+	width: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+	0% {margin-left: 0;}
+	20% {margin-left: 0;}
+	
+	25% {margin-left: -100%;}
+	45% {margin-left: -100%;}
+	
+	50% {margin-left: -200%;}
+	70% {margin-left: -200%;}
+	
+	75% {margin-left: -300%;}
+	100% {margin-left: -300%;}
 }
 /*# sourceMappingURL=estilo.css.map */
